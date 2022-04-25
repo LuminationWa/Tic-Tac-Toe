@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Display  */
+
+#display {
+    width: 600px;
+    height: 100px;
+    background: rgba(128, 128, 128, 0.2);
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    padding-bottom: 30px;
+
+}
+
+#display.displayResult {
+    background-color: rgba(124, 124, 120, 0.4);
+    box-shadow: inset 0 0 10px #000000;
+}
+
+#display-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    max-height: 200px;
+
+}
+
+#reset-btn {
+    background-color: rgba(185, 182, 182, 0.1);
+    justify-self: center;
+    height: 100%;
+    width: 300px;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+}
+
+/* Game Board */
+
+#game-board {
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+}
+
+.cell {
+    height: 200px;
+    width: 200px;
+    font-size: 5rem;
+}
+
+.xMark {
+    background-color: rgba(253, 112, 112, 0.5);
+
+}
+
+.oMark {
+    background-color: rgba(159, 255, 255, 0.5);
+}
